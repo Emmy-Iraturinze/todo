@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const path = require('path');
 
 const app = express();
 
@@ -18,6 +19,13 @@ app.use( express.static( "public" ) );
 app.use(require("./routes/index"))
 
 app.use(require("./routes/todo"))
+
+app.use(express.static(__dirname + '/dist/ira2-app'));
+
+app.get('/*', function(req,res) {
+        
+     res.sendFile(path.join(__dirname+'/dist/ira2-app/index.ejs'));
+     });
 
 
 app.listen(3000,()=>
