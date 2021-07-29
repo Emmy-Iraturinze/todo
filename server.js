@@ -10,7 +10,7 @@
 
     app.get('/*', function(req,res) {
         
-    res.sendFile(path.join(__dirname+'/dist/ira2-app/index.ejs'));
+    res.sendFile(path.join(__dirname+'/dist/ira2-app/index.html'));
     });
 
     // Start the app by listening on the default Heroku port
