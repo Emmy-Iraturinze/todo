@@ -18,13 +18,13 @@
                <div class="container">
                        
                     <form action="/add/todo" method="POST">
-                         <img style="margin-left: 80px;" src="PngItem_2456104.png" width="80px"/>
+                         <img style="margin-left: 0px;margin-bottom: 50px;margin-top: 20px;" src="PngItem_2456104.png" width="80px"/>
                        
                          <div class="row">
-                                   <div style="margin-left: 70px;margin-top: 20px;" class="col ">
+                                   <div style="margin-left: -5px;margin-top: 20px;" class="col ">
                                              <input type="text" id="" name="todo" class="form-control w-100 " placeholder="Write here ..."require> 
                                    </div>
-                                   <div style="margin-left: 70px;margin-top: 20px;margin-bottom: 5px;" class="col">
+                                   <div style="margin-left: 0px;margin-top: 20px;margin-bottom: 5px;" class="col">
                                              <input type="submit" value="Add" class="btn btn-primary " >
                                    </div>
 
@@ -34,7 +34,7 @@
                                  
 
                     
-<ul style="margin-left: 70px;"  class="list-group mt-5 ">
+<ul style="margin-left: 0px;"  class="list-group mt-5 ">
 
           <% todo.forEach(todos => { %>
 
@@ -74,12 +74,14 @@
                }
                form{
                     border: 1px solid orange;
-                    width: 100%;
+                    width: 50%;
                     height: 550px;
                     background:linear-gradient(
 #141e30
 ,
 #243b55);
+               border-radius: 5px;
+               margin-left: 200px;
                    
                }
                .row{
